@@ -1,5 +1,4 @@
 .App {
-  background-color: black;
   min-height: 100vh;
   color: white;
   display: flex;
@@ -8,6 +7,22 @@
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+}
+
+.background {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  filter: brightness(50%);
+}
+
+.text-container {
+  z-index: 1;
 }
 
 .phrase {

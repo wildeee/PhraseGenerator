@@ -1,12 +1,20 @@
 import React from 'react';
 import './App.css';
 
+const randomBackgroundNumber = Math.floor(Math.random() * 11) + 1;
+
 function App() {
   return (
     <div className="App">
-      <div>
-        <p className="phrase">"Para ter um negócio de sucesso, alguém, algum dia, teve que tomar uma atitude de coragem."</p>
-        <p className="author">Wilde Rossi</p>
+      <div
+        className="background"
+        style={{backgroundImage: `url('/wallpapers/wallpaper-${randomBackgroundNumber}.jpg')`}}
+      />
+      <div className="text-container">
+        <p className="phrase">
+          "Hoje rirão do seu esforço. Amanhã, rirão do seu fracasso."
+        </p>
+        <p className="author">Autor desconhecido</p>
       </div>
     </div>
   );
